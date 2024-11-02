@@ -2,7 +2,8 @@ import { Application, Router } from "jsr:@oak/oak";
 
 const rootRouter = new Router();
 rootRouter.get("/", (ctx) => {
-    ctx.response.body = "Hello world!";
+    const exampleObj={message:"Hello"}
+    ctx.response.body = exampleObj;
 });
 
 const app = new Application();
